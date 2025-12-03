@@ -1,0 +1,20 @@
+<style>
+	.about-text {
+		padding: 2px;
+		font-size: 13px;
+	}
+</style>
+
+<div class="about-text">
+	<p>
+		<strong>The Height Clearance Tool is no longer accessible.</strong> 
+	</p>
+
+	<p>
+		All information previously available on this tool is now available on the Commercial Vehicle Routing Tool. To access the Commercial Vehicle Routing Tool directly, please visit the following link: <a href="https://twm.th.gov.bc.ca/?c=cvrt" target="_blank">https://twm.th.gov.bc.ca/?c=cvrt</a>.</b> 
+	</p>
+	
+	<p>
+		If you have any questions or concerns please contact <a href="mailto:onRouteBC@gov.bc.ca">onRouteBC@gov.bc.ca</a>.</a>
+	</p>
+</div>
