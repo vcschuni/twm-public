@@ -1,10 +1,15 @@
 FROM php:8.2-apache
+
 WORKDIR /var/www/html
 COPY . /var/www/html
+
+# Apache rewrite module
 RUN a2enmod rewrite
+
+# Ensure OpenShift non-root user can read/write
 RUN chmod -R 755 /var/www/html
 
-# Configure Apache to use 8080
+# Change Apache to listen on 8080 (non-root)
 ENV PORT=8080
 RUN sed -i 's/Listen 80/Listen 8080/' /etc/apache2/ports.conf
 RUN sed -i 's/:80>/:8080>/' /etc/apache2/sites-available/000-default.conf
