@@ -112,70 +112,34 @@ function returnEnvironment() {
 	// Define the environments based on domain
 	var domainEnvironmentMatrix = {
 		"DEV": [
-			"nadina.th.gov.bc.ca",
 			"localhost",
 			"127.0.0.1",
 			"dev-motigeo.th.gov.bc.ca",
-			"dev-www.th.gov.bc.ca",
-			"dev.drivebc.ca",
-			"lb1-dev.drivebc.ca",
-			"lb2-dev.drivebc.ca",
 			"dev-rdm.th.gov.bc.ca",
-			"devoas4.apps.th.gov.bc.ca",
 			"dev-twm.th.gov.bc.ca",
+			"devoas4.apps.th.gov.bc.ca",
 			"dev.apps.silver.devops.gov.bc.ca"
 		],
 		"TST": [
 			"tst-motigeo.th.gov.bc.ca",
-			"tst-www.th.gov.bc.ca",
-			"tst.drivebc.ca",
-			"lb1-tst.drivebc.ca",
-			"lb2-tst.drivebc.ca",
 			"tst-rdm.th.gov.bc.ca",
-			"tstoas5.apps.th.gov.bc.ca",
 			"tst-twm.th.gov.bc.ca",
+			"tstoas5.apps.th.gov.bc.ca",
 			"test.apps.silver.devops.gov.bc.ca"
 		],
 		"STG": [
 			"stg-motigeo.th.gov.bc.ca",
-			"stg-www.th.gov.bc.ca",
-			"stg.drivebc.ca",
-			"lb1-stg.drivebc.ca",
-			"lb2-stg.drivebc.ca",
-			"lb3-stg.drivebc.ca",
-			"lb4-stg.drivebc.ca",
 			"stg-rdm.th.gov.bc.ca",
-			"stg-twm.th.gov.bc.ca",
-			"prod.apps.silver.devops.gov.bc.ca"
-		],
-		"PRD": [
-			"motigeo.th.gov.bc.ca",
-			"prd-motigeo.th.gov.bc.ca",
-			"th.gov.bc.ca",
-			"www.th.gov.bc.ca",
-			"drivebc.ca",
-			"www.drivebc.ca",
-			"prd.drivebc.ca",
-			"lb1-prd.drivebc.ca",
-			"lb2-prd.drivebc.ca",
-			"lb3-prd.drivebc.ca",
-			"lb4-prd.drivebc.ca",
-			"rdm.th.gov.bc.ca",
-			"prd-rdm.th.gov.bc.ca",
-			"prdoas5.apps.th.gov.bc.ca",
-			"prd-twm.th.gov.bc.ca",
-			"twm.th.gov.bc.ca",
-			"prod.apps.silver.devops.gov.bc.ca"
+			"stg-twm.th.gov.bc.ca"
 		]
 	};
 	
 	// Set the default environment
-	var environment = null; // default
+	var environment = "PRD"; // default
 	
 	// Iterate over the domainEnvironmentMatrix object to determine the current environment
 	$.each(domainEnvironmentMatrix, function(environmentName, environmentDomains) {
 		$.each(environmentDomains, function(index, environmentDomain) {
-			//if (window.location.hostname.toLowerCase() == environmentDomain.toLowerCase()) environment = environmentName;
 			if (window.location.hostname.toLowerCase().includes(environmentDomain.toLowerCase())) environment = environmentName;
 		});
 	});
