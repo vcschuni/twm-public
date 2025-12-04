@@ -175,7 +175,8 @@ function returnEnvironment() {
 	// Iterate over the domainEnvironmentMatrix object to determine the current environment
 	$.each(domainEnvironmentMatrix, function(environmentName, environmentDomains) {
 		$.each(environmentDomains, function(index, environmentDomain) {
-			if (window.location.hostname.toLowerCase() == environmentDomain.toLowerCase()) environment = environmentName;
+			//if (window.location.hostname.toLowerCase() == environmentDomain.toLowerCase()) environment = environmentName;
+			if (window.location.hostname.toLowerCase().includes(environmentDomain.toLowerCase())) environment = environmentName;
 		});
 	});
 
