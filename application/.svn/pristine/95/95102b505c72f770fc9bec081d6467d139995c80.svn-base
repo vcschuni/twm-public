@@ -61,7 +61,7 @@ function isValidTwmDomain() {
 	var validTwmDomains = [
 		"localhost",
 		"127.0.0.1",
-		"gov.bc.ca",
+		"th.gov.bc.ca",
 		"drivebc.ca"
 	];
 	
