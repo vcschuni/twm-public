@@ -122,7 +122,8 @@ function returnEnvironment() {
 			"lb2-dev.drivebc.ca",
 			"dev-rdm.th.gov.bc.ca",
 			"devoas4.apps.th.gov.bc.ca",
-			"dev-twm.th.gov.bc.ca"
+			"dev-twm.th.gov.bc.ca",
+			"dev.apps.silver.devops.gov.bc.ca"
 		],
 		"TST": [
 			"tst-motigeo.th.gov.bc.ca",
@@ -132,7 +133,8 @@ function returnEnvironment() {
 			"lb2-tst.drivebc.ca",
 			"tst-rdm.th.gov.bc.ca",
 			"tstoas5.apps.th.gov.bc.ca",
-			"tst-twm.th.gov.bc.ca"
+			"tst-twm.th.gov.bc.ca",
+			"test.apps.silver.devops.gov.bc.ca"
 		],
 		"STG": [
 			"stg-motigeo.th.gov.bc.ca",
@@ -143,7 +145,8 @@ function returnEnvironment() {
 			"lb3-stg.drivebc.ca",
 			"lb4-stg.drivebc.ca",
 			"stg-rdm.th.gov.bc.ca",
-			"stg-twm.th.gov.bc.ca"
+			"stg-twm.th.gov.bc.ca",
+			"prod.apps.silver.devops.gov.bc.ca"
 		],
 		"PRD": [
 			"motigeo.th.gov.bc.ca",
@@ -161,7 +164,8 @@ function returnEnvironment() {
 			"prd-rdm.th.gov.bc.ca",
 			"prdoas5.apps.th.gov.bc.ca",
 			"prd-twm.th.gov.bc.ca",
-			"twm.th.gov.bc.ca"
+			"twm.th.gov.bc.ca",
+			"prod.apps.silver.devops.gov.bc.ca"
 		]
 	};
 	
